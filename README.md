@@ -16,6 +16,37 @@ Each organization includes:
 
 The map is a single self-contained HTML file with no external dependencies beyond Google Fonts. It uses a bin-packing layout algorithm to arrange category boxes efficiently.
 
+## Taxonomy
+
+Organizations on this map are classified by function, not by parentage. Where an org is placed depends on what it does, not who it's under.
+
+### Legal status badges
+
+| Badge | Meaning |
+|-------|---------|
+| (c)(3) | US 501(c)(3) charitable nonprofit |
+| (c)(6) | US 501(c)(6) trade association |
+| nonprofit | Non-US nonprofit or general nonprofit status |
+| corp | For-profit company |
+| gov | Government program |
+| IGO | Intergovernmental organization |
+| sub-org | Organization with its own executive leader and board, but not its own legal entity — operates under a parent |
+
+### What makes a sub-org?
+
+A sub-org has its own executive leader (ED, President, CEO, GM — title doesn't matter) and its own board of directors, but is not independently incorporated. It is legally part of a parent organization. Sub-orgs are placed in the functional category where they belong, not grouped under their parent.
+
+### Multi-project foundation vs. fiscal host
+
+Both live in the Umbrella Foundations & Fiscal Sponsors section. The distinction:
+
+- **Multi-project foundation** — has at least one sub-org under it
+- **Fiscal host** — hosts projects, but none of those projects have their own executive leader and board
+
+### Independent organizations
+
+Independently incorporated legal entities are tagged by their own legal status ((c)(3), (c)(6), nonprofit, etc.) and placed by function.
+
 ## Contributing
 
 This map is intentionally incomplete — there are many organizations doing important work in open source that aren't listed yet. Contributions are welcome.
@@ -30,18 +61,6 @@ This map is intentionally incomplete — there are many organizations doing impo
 <span class="org" data-tip="Brief description of what the org does.">Organization Name <span class="tax-badge badge-TYPE">LABEL</span> <span class="region-flag">FLAG</span></span>
 ```
 
-**Badge types:**
-
-| Class | Label | Use for |
-|-------|-------|---------|
-| `badge-c3` | (c)(3) | US 501(c)(3) charitable nonprofits |
-| `badge-c6` | (c)(6) | US 501(c)(6) trade associations |
-| `badge-nonprofit` | nonprofit | Non-US nonprofits or general nonprofit status |
-| `badge-corp` | corp | For-profit companies |
-| `badge-gov` | gov | Government programs |
-| `badge-igo` | IGO | Intergovernmental organizations |
-| `badge-sub` | sub-org | Sub-foundations (e.g., CNCF under Linux Foundation) |
-
 **Region flags** use HTML entity codes for country flag emoji (e.g., `&#x1F1FA;&#x1F1F8;` for US, `&#x1F1E9;&#x1F1EA;` for Germany). Use `&#x1F310;` (globe) for global/distributed organizations.
 
 ### Guidelines
@@ -55,14 +74,14 @@ This map is intentionally incomplete — there are many organizations doing impo
 
 | Category | What belongs here |
 |----------|-------------------|
-| Umbrella Foundations & Fiscal Sponsors | Multi-project foundations, fiscal hosts, LF sub-foundations |
+| Umbrella Foundations & Fiscal Sponsors | Multi-project foundations and fiscal hosts |
 | Security | Standards, auditing, infrastructure protection |
 | Government & Public Sector | Direct funding programs, recognition frameworks |
 | Single-Project & Language Foundations | Language/runtime foundations, applications, OS/infra, data/protocols |
 | Advocacy & Policy | Software freedom, policy/standards, legal services |
 | Funding Mechanisms & Platforms | Direct-to-maintainer, pledge models, philanthropies |
 | Community Networks | Regional community building |
-| Domain-Specific | Science & data, industry & civic tech, hardware, education, AI & ML |
+| Domain-Specific | Science & data, industry & civic tech, hardware, education, AI & ML, cloud, energy, film |
 
 ## License
 
